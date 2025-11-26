@@ -21,14 +21,14 @@ export const exercises = pgTable('exercises', {
   name: text('name').notNull(),
   category: exerciseCategoryEnum('category').notNull(),
   description: text('description'),
-  createdBy: uuid('created_by'),
+  createdBy: text('created_by'),
   createdAt: timestamp('created_at').defaultNow().notNull(),
 });
 
 // Workouts table - workout sessions
 export const workouts = pgTable('workouts', {
   id: uuid('id').primaryKey().defaultRandom(),
-  userId: uuid('user_id').notNull(),
+  userId: text('user_id').notNull(),
   title: text('title').notNull(),
   notes: text('notes'),
   durationMinutes: integer('duration_minutes'),

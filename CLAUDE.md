@@ -106,3 +106,21 @@ The application is in **starter template** state with:
 - **Clerk integration documented** but not yet implemented
 
 The application needs to be developed from scratch into a workout diary system with authentication via Clerk.
+
+## Documentation Reference Guidelines
+
+**CRITICAL**: All code generation by Claude Code MUST follow this workflow:
+
+1. **First**: Always check the `/docs` directory for relevant documentation before writing any code
+2. **Reference**: Refer to the appropriate documentation file in `/docs` for implementation guidance
+3. **Implement**: Only after checking documentation, proceed with code implementation
+
+The `/docs` directory contains:
+- **Architecture documentation** - System design patterns and component relationships
+- **API specifications** - Database schemas, API endpoints, and data models
+- **Component guides** - Specific component implementation patterns
+- **Workflow documentation** - Step-by-step implementation guides
+
+- /docs/ui.md
+
+This ensures consistency, follows established patterns, and maintains architectural integrity throughout the development process.
