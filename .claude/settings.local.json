@@ -21,7 +21,12 @@
       "mcp__neon__complete_database_migration",
       "Bash(taskkill:*)",
       "Bash(npm run build:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(npm update @clerk/nextjs @types/react eslint-config-next lucide-react next)",
+      "Bash(npm audit:*)",
+      "Bash(npx:*)",
+      "WebSearch",
+      "Bash(echo:*)"
     ],
     "deny": [],
     "ask": []
